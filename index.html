@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2026 - Our Family</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated cursor trail -->
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- Floating particles background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Progress bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- HERO SECTION WITH PARALLAX -->
+    <section class="hero">
+        <!-- Background layers for parallax -->
+        <div class="parallax-layer parallax-bg"></div>
+        <div class="parallax-layer parallax-stars" id="parallaxStars"></div>
+        <div class="parallax-layer parallax-snow-back" id="parallaxSnowBack"></div>
+
+        <div class="hero-bg-overlay"></div>
+
+        <!-- Animated fireworks/crackers -->
+        <div class="fireworks-container" id="fireworksContainer"></div>
+
+        <!-- Sparkles -->
+        <div class="sparkles-container" id="sparklesContainer"></div>
+
+        <!-- Floating decorative elements -->
+        <div class="floating-elements">
+            <div class="floating-circle circle-1"></div>
+            <div class="floating-circle circle-2"></div>
+            <div class="floating-circle circle-3"></div>
+        </div>
+
+        <!-- Light beams -->
+        <div class="light-beams">
+            <div class="beam beam-1"></div>
+            <div class="beam beam-2"></div>
+            <div class="beam beam-3"></div>
+        </div>
+
+        <!-- Main content with parallax -->
+        <div class="hero-content parallax-content" id="heroContent">
+            <div class="greeting">
+                <span class="greeting-text">Welcome to</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="title-line-1">Happy New Year</span>
+                <span class="title-year" id="titleYear">2026</span>
+            </h1>
+
+            <div class="hero-divider">
+                <span class="divider-line"></span>
+            </div>
+
+            <p class="hero-subtitle">Celebrating Love, Joy & New Beginnings with Our Beautiful Family</p>
+
+            <!-- Decorative snowflakes around text -->
+            <div class="deco-snowflake deco-1">❄</div>
+            <div class="deco-snowflake deco-2">❅</div>
+            <div class="deco-snowflake deco-3">❆</div>
+            <div class="deco-snowflake deco-4">✻</div>
+        </div>
+
+        <!-- Scroll indicator with parallax -->
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span class="scroll-text">Scroll to explore</span>
+            <span class="scroll-arrow">↓</span>
+        </div>
+
+        <!-- Front snow layer for parallax -->
+        <div class="parallax-layer parallax-snow-front" id="parallaxSnowFront"></div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section class="wishes-section" id="wishes">
+        <h2 class="section-title" data-aos="fade-up">New Year Wishes 2026</h2>
+        <p class="section-subtitle" data-aos="fade-up">Our Heartfelt Wishes for the Coming Year</p>
+        <div class="wishes-container">
+            <div class="wish-card" data-aos="flip-left">
+                <div class="wish-icon-wrapper">
+                    <div class="wish-icon">🎊</div>
+                </div>
+                <h3>Joy & Happiness</h3>
+                <p>May this new year bring endless joy, laughter, and precious moments to cherish with our loved ones forever.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="wish-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="wish-icon-wrapper">
+                    <div class="wish-icon">🌟</div>
+                </div>
+                <h3>Success & Growth</h3>
+                <p>Wishing everyone new achievements, personal growth, and success in all endeavors throughout this year.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="wish-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="wish-icon-wrapper">
+                    <div class="wish-icon">❤️</div>
+                </div>
+                <h3>Health & Love</h3>
+                <p>May good health, peace, and love surround our family throughout 2026 and beyond with warmth.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="wish-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="wish-icon-wrapper">
+                    <div class="wish-icon">✨</div>
+                </div>
+                <h3>Dreams Come True</h3>
+                <p>Here's to making dreams reality, creating beautiful memories, and celebrating life together always.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="wish-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="wish-icon-wrapper">
+                    <div class="wish-icon">🌈</div>
+                </div>
+                <h3>Peace & Prosperity</h3>
+                <p>May 2026 bring peace to our hearts, prosperity to our home, and endless blessings to our family journey.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="wish-card" data-aos="flip-left" data-aos-delay="500">
+                <div class="wish-icon-wrapper">
+                    <div class="wish-icon">🎆</div>
+                </div>
+                <h3>Adventure & Memories</h3>
+                <p>Wishing us exciting adventures, wonderful experiences, and unforgettable memories that last a lifetime.</p>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Gallery with Upload - NOW WITH 18 PHOTOS (3 ROWS) -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="section-title" data-aos="fade-up">Our Precious Moments</h2>
+        <p class="section-subtitle" data-aos="fade-up">Beautiful memories from 2025</p>
+
+        <!-- Upload Section
+        <div class="upload-section" data-aos="fade-up">
+            <div class="upload-box">
+                <input type="file" id="imageUpload" accept="image/*" multiple style="display: none;">
+                <label for="imageUpload" class="upload-label">
+                    <span class="upload-icon">📤</span>
+                    <span class="upload-text">Click to Upload Photos</span>
+                    <span class="upload-hint">Support: JPG, PNG, GIF (Multiple files)</span>
+                </label>
+            </div>
+            <div id="uploadStatus" class="upload-status"></div>
+        </div> -->
+
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- ROW 1 - Photos 1-6 -->
+            
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/photo2.jpg" alt="Special Celebration" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 2</p><small>Special Celebration</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/photo3.jpg" alt="Family Fun Time" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 3</p><small>Family Fun Time</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <!-- ROW 2 - Photos 7-12 -->
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/photo8.jpeg" alt="Weekend Fun" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 8</p><small>Weekend Fun</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/photo9.jpeg" alt="Birthday Party" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 9</p><small>Birthday Party</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/photo10.jpeg" alt="Vacation Memories" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 10</p><small>Vacation Memories</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                <img src="images/photo11.jpeg" alt="Special Occasions" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 11</p><small>Special Occasions</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/photo12.jpeg" alt="Adventure Time" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 12</p><small>Adventure Time</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <!-- ROW 3 - Photos 13-18 -->
+            <div class="gallery-item" data-aos="zoom-in">
+                <img src="images/photo13.jpeg" alt="Winter Wonderland" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 13</p><small>Winter Wonderland</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/photo14.jpeg" alt="Summer Vibes" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 14</p><small>Summer Vibes</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/photo15.jpeg" alt="Happy Moments" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 15</p><small>Happy Moments</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/photo16.jpeg" alt="Family Bonding" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 16</p><small>Family Bonding</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/photo18.jpeg" alt="Forever Together" class="gallery-photo" onerror="this.parentElement.innerHTML='<div class=&quot;photo-placeholder&quot;><span class=&quot;photo-icon&quot;>📷</span><p>Add Photo 18</p><small>Forever Together</small></div>'">
+                <div class="gallery-overlay">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Messages Section -->
+    <section class="messages-section" id="messages">
+        <h2 class="section-title" data-aos="fade-up">Heartfelt Messages</h2>
+        <p class="section-subtitle" data-aos="fade-up">From Our Hearts to Yours</p>
+        <div class="messages-container">
+            <div class="message-card" data-aos="slide-right">
+                <div class="message-header">
+                    <div class="avatar">👨‍👩‍👧‍👦</div>
+                    <div>
+                        <h3>To Our Amazing Family</h3>
+                        <span class="message-date">December 2025</span>
+                    </div>
+                </div>
+                <p>As we step into 2026, I'm grateful for every moment we've shared. Your love and support make every day special. Here's to another year of creating beautiful memories together!</p>
+                <div class="message-footer">
+                    <span class="message-tag">💝 With Love</span>
+                </div>
+            </div>
+
+            <div class="message-card" data-aos="slide-left">
+                <div class="message-header">
+                    <div class="avatar">💝</div>
+                    <div>
+                        <h3>Love & Gratitude</h3>
+                        <span class="message-date">New Year 2026</span>
+                    </div>
+                </div>
+                <p>Thank you for being the most wonderful family. Your presence fills my life with joy and meaning. May this new year bring us even closer and bless us with countless happy moments.</p>
+                <div class="message-footer">
+                    <span class="message-tag">✨ Forever Grateful</span>
+                </div>
+            </div>
+
+            <div class="message-card" data-aos="slide-right">
+                <div class="message-header">
+                    <div class="avatar">🌈</div>
+                    <div>
+                        <h3>Looking Forward</h3>
+                        <span class="message-date">Welcoming 2026</span>
+                    </div>
+                </div>
+                <p>2026 is our year! Let's make it unforgettable with new adventures, shared laughter, and boundless love. Together, there's nothing we can't achieve. Happy New Year to the best family ever!</p>
+                <div class="message-footer">
+                    <span class="message-tag">🎊 New Beginnings</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section class="countdown-section" id="countdown">
+        <h2 class="section-title" data-aos="fade-up">Celebrating 2026!</h2>
+        <p class="section-subtitle" data-aos="fade-up">Time into the New Year</p>
+        <div class="countdown-display">
+            <div class="countdown-item" data-aos="flip-up">
+                <span class="countdown-number" id="days">0</span>
+                <span class="countdown-label">Days</span>
+                <div class="countdown-bar"></div>
+            </div>
+            <div class="countdown-item" data-aos="flip-up" data-aos-delay="100">
+                <span class="countdown-number" id="hours">0</span>
+                <span class="countdown-label">Hours</span>
+                <div class="countdown-bar"></div>
+            </div>
+            <div class="countdown-item" data-aos="flip-up" data-aos-delay="200">
+                <span class="countdown-number" id="minutes">0</span>
+                <span class="countdown-label">Minutes</span>
+                <div class="countdown-bar"></div>
+            </div>
+            <div class="countdown-item" data-aos="flip-up" data-aos-delay="300">
+                <span class="countdown-number" id="seconds">0</span>
+                <span class="countdown-label">Seconds</span>
+                <div class="countdown-bar"></div>
+            </div>
+        </div>
+        <button class="celebrate-btn" onclick="triggerCelebration()">
+            Celebrate Now!
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Made with Love for our family</p>
+            <p class="footer-year">Happy New Year 2026!</p>
+            <div class="footer-icons">
+                <span style="--i:0">🎊</span>
+                <span style="--i:1">🎉</span>
+                <span style="--i:2">✨</span>
+                <span style="--i:3">🎆</span>
+                <span style="--i:4">💝</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Celebration confetti container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
